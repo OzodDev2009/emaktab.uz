@@ -1,0 +1,392 @@
+@import url(./fonts.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+body {
+  font-family: "Roboto";
+}
+
+@media (max-width: 425px) {
+  header nav img {
+    width: 150px;
+  }
+}
+header nav ul li a {
+  font-size: 20px;
+  color: #d3d3d3;
+  font-weight: 400;
+  transition: 0.2s linear;
+}
+@media (max-width: 1057px) {
+  header nav ul li a {
+    display: none;
+  }
+}
+header nav ul li a:hover {
+  color: black;
+  transition: 0.2s linear;
+}
+header nav .btn:focus {
+  box-shadow: none;
+}
+header nav .btn-primary {
+  background: none;
+  border: none;
+  color: #57daf1;
+}
+header nav .btn-primary:hover {
+  background: #d3d3d3;
+  color: #57daf1;
+}
+header nav .header__btn .btn-1 {
+  border: 3px solid #00bae5;
+  border-radius: 7px;
+  color: #00bae5;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+  transition: 0.2s linear;
+}
+@media (max-width: 1057px) {
+  header nav .header__btn .btn-1 {
+    display: none;
+  }
+}
+header nav .header__btn .btn-1:hover {
+  background: #00bae5;
+  transition: 0.2s linear;
+  color: white;
+}
+header nav .header__btn .btn-2 {
+  border: 3px solid #19b47b;
+  border-radius: 7px;
+  color: #19b47b;
+  font-size: 20px;
+  font-weight: 500;
+  width: 170px;
+  height: 50px;
+  transition: 0.2s linear;
+}
+@media (max-width: 1057px) {
+  header nav .header__btn .btn-2 {
+    display: none;
+  }
+}
+header nav .header__btn .btn-2:hover {
+  background: #19b47b;
+  color: white;
+  transition: 0.2s linear;
+}
+
+@media (max-width: 1057px) {
+  main {
+    margin-top: 50px;
+  }
+}
+main .main__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #3c53a8;
+  height: 100px;
+}
+main .main__content h2 {
+  font-size: 40px;
+  color: white;
+  font-weight: 700;
+}
+@media (max-width: 1057px) {
+  main .main__content h2 {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+main .main__content a {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  border-bottom: 1px solid white;
+}
+@media (max-width: 1057px) {
+  main .main__content a {
+    display: none;
+  }
+}
+@media (max-width: 630px) {
+  main .main__content a {
+    font-size: 10px;
+    margin-top: 50px;
+  }
+}
+@media (max-width: 500px) {
+  main .main__content a {
+    font-size: 10px;
+    margin-top: 70px;
+  }
+}
+@media (max-width: 373px) {
+  main .main__content a {
+    width: 160px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 330px) {
+  main .main__content a {
+    width: 180px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 323px) {
+  main .main__content a {
+    width: 190px;
+    font-size: 10px;
+  }
+}
+main .login {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  background: white;
+  height: 380px;
+}
+main .login .login__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 50px;
+}
+@media (max-width: 425px) {
+  main .login .login__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+main .login .login__content label {
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+main .login .login__content input {
+  width: 400px;
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  padding: 10px;
+}
+@media (max-width: 425px) {
+  main .login .login__content input {
+    width: 300px;
+  }
+}
+main .login .login__content input:hover {
+  border: 1px solid #00bae5;
+}
+main .login .login__content .login__block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+@media (max-width: 425px) {
+  main .login .login__content .login__block label {
+    position: relative;
+    left: 0px;
+  }
+}
+main .login .login__content button {
+  width: 200px;
+  height: 50px;
+  border: 1px solid #649e26;
+  border-radius: 10px;
+  background: #6db62e;
+  margin-top: 30px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+@media (max-width: 425px) {
+  main .login .login__content button {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+main .info {
+  border: 1px solid #d3d3d3;
+  background: #EBEBEB;
+  height: 70px;
+  margin-top: 20px;
+}
+@media (max-width: 1057px) {
+  main .info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+  }
+}
+main .info .info__content {
+  display: flex;
+  position: relative;
+  top: 10px;
+}
+main .info .info__content p .login__link1 {
+  color: black;
+  font-weight: 600;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+}
+@media (max-width: 1057px) {
+  main .info .info__content p .login__link1 {
+    color: #00bae5;
+    border-bottom: 1px solid #00bae5;
+  }
+}
+main .info .info__content p .login__link2 {
+  color: black;
+  font-weight: 600;
+  position: relative;
+  top: 10px;
+  margin-left: 10px;
+  border-bottom: 1px solid black;
+}
+@media (max-width: 1057px) {
+  main .info .info__content p .login__link2 {
+    display: none;
+  }
+}
+main .info .info__content p a:hover {
+  color: #649e26;
+  border-bottom: 1px solid #649e26;
+  transition: 0.2s linear;
+}
+
+footer {
+  background: rgba(23, 20, 20, 0.9254901961);
+  height: 200px;
+  margin-top: 50px;
+}
+@media (max-width: 1057px) {
+  footer {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  footer {
+    height: 450px;
+  }
+}
+footer .footer__content nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 820px) {
+  footer .footer__content nav {
+    flex-direction: column;
+  }
+}
+footer .footer__content nav .footer__info h2 {
+  color: white;
+  font-weight: 700;
+}
+@media (max-width: 820px) {
+  footer .footer__content nav .footer__info h2 {
+    text-align: center;
+  }
+}
+@media (max-width: 820px) {
+  footer .footer__content nav .footer__info ul {
+    text-align: center !important;
+  }
+}
+footer .footer__content nav .footer__info a {
+  color: #d3d3d3;
+  transition: 0.2s linear;
+}
+footer .footer__content nav .footer__info a:hover {
+  color: #19b47b;
+  transition: 0.2s linear;
+}
+footer .footer__content nav .footer__info:nth-last-of-type(1) a {
+  color: #19b47b;
+  transition: 0.2s linear;
+}
+footer .footer__content nav .footer__info:nth-last-of-type(1) a:hover {
+  border-bottom: 1px solid #19b47b;
+  transition: 0.2s linear;
+}
+@media (max-width: 820px) {
+  footer .footer__content nav .footer__info:nth-last-of-type(1) {
+    position: relative;
+    top: 50px;
+  }
+}
+@media (max-width: 820px) {
+  footer .footer__content nav .footer__info:nth-last-of-type(2) {
+    position: relative;
+    top: 40px;
+  }
+}
+footer .footer__content nav .footer__info:nth-last-of-type(3) {
+  position: relative;
+  top: 35px;
+}
+footer .footer__content nav .footer__info:nth-last-of-type(4) {
+  position: relative;
+  top: 25px;
+}
+footer .footer__finish {
+  background: #171414;
+  margin-top: 40px;
+  height: 55px;
+}
+@media (max-width: 820px) {
+  footer .footer__finish {
+    margin-top: 60px;
+  }
+}
+footer .footer__finish .footer__finish-block {
+  position: relative;
+  top: 20px;
+}
+@media (max-width: 820px) {
+  footer .footer__finish .footer__finish-block ul {
+    text-align: center;
+  }
+}
+footer .footer__finish .footer__finish-block ul li a {
+  color: #d3d3d3;
+  font-weight: 700;
+  transition: 0.2s linear;
+}
+footer .footer__finish .footer__finish-block ul li a:hover {
+  color: #19b47b;
+  transition: 0.2s linear;
+}/*# sourceMappingURL=style.css.map */
